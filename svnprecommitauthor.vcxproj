@@ -35,7 +35,6 @@
       <WarningLevel>Level3</WarningLevel>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>false</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>ext\subversion_include;ext\apr_include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -46,6 +45,8 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AllowIsolation>false</AllowIsolation>
+      <AdditionalLibraryDirectories>ext\apr_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libapr-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -54,11 +55,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="libapr-1.def">
-      <Command>lib /DEF:%(FullPath) /OUT:$(IntDir)\%(Filename).lib</Command>
-      <Outputs>$(IntDir)\%(Filename).lib</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">lib /DEF:%(FullPath) /OUT:$(IntDir)\%(Filename).lib /MACHINE:X86 /nologo</Command>
-    </CustomBuild>
     <CustomBuild Include="libsvn_fs-1.def">
       <Command>lib /DEF:%(FullPath) /OUT:$(IntDir)\%(Filename).lib</Command>
       <Outputs>$(IntDir)\%(Filename).lib</Outputs>

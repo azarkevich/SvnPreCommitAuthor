@@ -1,7 +1,0 @@
-EXPORTS
-apr_pool_create_ex@16	@243
-apr_pool_initialize@0	@251
-apr_pool_destroy@4	@249
-apr_strerror@12	@382
-apr_file_open@20	@87
-apr_file_gets@12	@77
