@@ -1,0 +1,3 @@
+svn co https://svn.apache.org/repos/asf/subversion/tags/1.7.18/subversion/include subversion_include
+svn co https://svn.apache.org/repos/asf/apr/apr/tags/1.5.1/include apr_include
+	build apr.h file (or copy from somewhere)
