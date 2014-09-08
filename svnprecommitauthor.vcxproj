@@ -58,14 +58,17 @@
     <CustomBuild Include="libapr-1.def">
       <Command>lib /DEF:%(FullPath) /OUT:$(IntDir)\%(Filename).lib</Command>
       <Outputs>$(IntDir)\%(Filename).lib</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">lib /DEF:%(FullPath) /OUT:$(IntDir)\%(Filename).lib /MACHINE:X86 /nologo</Command>
     </CustomBuild>
     <CustomBuild Include="libsvn_fs-1.def">
       <Command>lib /DEF:%(FullPath) /OUT:$(IntDir)\%(Filename).lib</Command>
       <Outputs>$(IntDir)\%(Filename).lib</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">lib /DEF:%(FullPath) /OUT:$(IntDir)\%(Filename).lib /MACHINE:X86 /nologo</Command>
     </CustomBuild>
     <CustomBuild Include="libsvn_subr-1.def">
       <Command>lib /DEF:%(FullPath) /OUT:$(IntDir)\%(Filename).lib</Command>
       <Outputs>$(IntDir)\%(Filename).lib</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">lib /DEF:%(FullPath) /OUT:$(IntDir)\%(Filename).lib /MACHINE:X86 /nologo</Command>
     </CustomBuild>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

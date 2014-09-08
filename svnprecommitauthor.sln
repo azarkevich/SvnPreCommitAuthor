@@ -5,12 +5,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "svnprecommitauthor", "svnpr
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EC5704A4-10C6-45D9-84B8-A216D24789CB}.Debug|Win32.ActiveCfg = Release|Win32
-		{EC5704A4-10C6-45D9-84B8-A216D24789CB}.Debug|Win32.Build.0 = Release|Win32
 		{EC5704A4-10C6-45D9-84B8-A216D24789CB}.Release|Win32.ActiveCfg = Release|Win32
 		{EC5704A4-10C6-45D9-84B8-A216D24789CB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
