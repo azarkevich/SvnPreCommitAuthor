@@ -1,5 +1,5 @@
 /hook/Release
-/hook/_ReSharper.*
+_ReSharper.*
 /hook/ext/apr_include
 /hook/ext/subversion_include
 *.opensdf
@@ -8,3 +8,6 @@
 *.user
 /ipch
 *.ipch
+bin/
+obj/
+packages/
